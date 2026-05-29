@@ -74,7 +74,7 @@ jobs:
           path: exercise-toolkit
           ref: v0.9.1
 
-      - name: Create comment - add step content
+      - name: Create comment - add step content here
         uses: GrantBirki/comment@v2.1.1
         with:
           repository: ${{ env.ISSUE_REPOSITORY }}
@@ -91,7 +91,7 @@ jobs:
           issue-number: ${{ env.ISSUE_NUMBER }}
           file: exercise-toolkit/markdown-templates/step-feedback/watching-for-progress.md
 
-      - name: Enable next step workflow
+      - name: Enable next step workflow here
         run: |
           gh workflow enable "Step 1"
         env:
